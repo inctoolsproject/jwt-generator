@@ -1,0 +1,24 @@
+{
+  "name": "jwt-generator",
+  "version": "1.0.0",
+  "description": "A command-line tool for generating json web token",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TingC/jwt-generator.git"
+  },
+  "author": "tingc",
+  "license": "ISC",
+  "bin": {
+    "jwtme": "./jwtme.js"
+  },
+  "dependencies": {
+    "clipboardy": "^1.1.4",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.11.0",
+    "jsonwebtoken": "^7.4.1"
+  }
+}
