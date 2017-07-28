@@ -4,6 +4,8 @@
 
 ## Usage
 
-To begin, clone this repo and run 'npm install' and then 'npm link' from your terminal.
-
-run `jwtme start` to start by entering user id and email address. You can use options for entering user id and email `jwtme start -u <userId> -e <email>` 
+1. clone this repository
+2. run `npm install` from terminal
+3. run `npm link` from terminal
+4. run `jwtme start` to start
+   or `jwtme start -u <userId> -e <email>`
