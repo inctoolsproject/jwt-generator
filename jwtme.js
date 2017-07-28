@@ -10,7 +10,7 @@ program
   .option('-u, --userId <userId>', 'The user to authenticate as')
   .option('-e, --email <email>', 'The user\'s email')
   .action(function(req, options) {
-    helper.showStartMsg();
+    console.log(helper.startMsg);
 
     co(function *() {
       let pairs = {};
@@ -26,7 +26,7 @@ program
       while (!validMail) {
         pairs['email'] = yield prompt('email: ');
         validMail = helper.validateEmail(pairs['email']);
-        if (!validMail) helper.showEmailError();
+        if (!validMail) console.log(helper.emailError);
       }
 
       do {
@@ -41,7 +41,7 @@ program
 
         if (!haveExtra) {
           helper.copy(jwt.generate(pairs));
-          helper.showCopiedMsg()
+          console.log(helper.copiedMsg);
           process.exit(1);
         }
       } while (haveExtra)

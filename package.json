@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A command-line tool for generating json web token",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
     "co-prompt": "^1.0.0",
     "commander": "^2.11.0",
     "jsonwebtoken": "^7.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
   }
 }
