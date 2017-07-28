@@ -30,9 +30,9 @@ describe('Helper', function() {
   });
 
   describe('#copy()', function() {
-    it('should copy string to clipboard', function() {
-      helper.copy('tokec');
-      assert.equal('tokec', clipboardy.readSync());
+    it('should copy a string to clipboard', function() {
+      helper.copy('token');
+      assert.equal('token', clipboardy.readSync());
     });
   });
 });
